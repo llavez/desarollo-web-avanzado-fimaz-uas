@@ -7,8 +7,6 @@ $usuarios = [];
 try {
     $usuarios [] = new Admin("Ines Gil", "ines.admin@uas.edu.mx");
     $usuarios [] = new Alumno("Sebastian Garcia", "sebastian@uas.edu.mx", "A12345");
-
-    // Este lanza excepción y NO se agrega al arreglo
     $usuarios[] = new Alumno("Error", "Correo-invalido", "B6789");
 
 } catch (Exception $e) {
